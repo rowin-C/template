@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
@@ -22,25 +20,28 @@ return {
     "goolord/alpha-nvim",
     opts = function(_, opts)
       -- customize the dashboard header
+
       opts.section.header.val = {
-        " █████  ███████ ████████ ██████   ██████",
-        "██   ██ ██         ██    ██   ██ ██    ██",
-        "███████ ███████    ██    ██████  ██    ██",
-        "██   ██      ██    ██    ██   ██ ██    ██",
-        "██   ██ ███████    ██    ██   ██  ██████",
-        " ",
-        "    ███    ██ ██    ██ ██ ███    ███",
-        "    ████   ██ ██    ██ ██ ████  ████",
-        "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-        "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-        "    ██   ████   ████   ██ ██      ██",
+        "",
+        "         _           _            _              _          _              _      ",
+        "        /\\ \\        /\\ \\         / /\\      _    /\\ \\       /\\ \\     _    /\\ \\     ",
+        "       /  \\ \\      /  \\ \\       / / /    / /\\   \\ \\ \\     /  \\ \\   /\\_\\ /  \\ \\    ",
+        "      / /\\ \\ \\    / /\\ \\ \\     / / /    / / /   /\\ \\_\\   / /\\ \\ \\_/ / // /\\ \\ \\   ",
+        "     / / /\\ \\_\\  / / /\\ \\ \\   / / /_   / / /   / /\\/_/  / / /\\ \\___/ // / /\\ \\ \\  ",
+        "    / / /_/ / / / / /  \\ \\_\\ / /_//_/\\/ / /   / / /    / / /  \\/____// / /  \\ \\_\\ ",
+        "   / / /__\\/ / / / /   / / // _______/\\/ /   / / /    / / /    / / // / /    \\_/  ",
+        "  / / /_____/ / / /   / / // /  \\____\\  /   / / /    / / /    / / // / /          ",
+        " / / /\\ \\ \\  / / /___/ / //_/ /\\ \\ /\\ \\/___/ / /__  / / /    / / // / /________   ",
+        "/ / /  \\ \\ \\/ / /____\\/ / \\_\\//_/ /_/ //\\__\\/ /___\\/ / /    / / // / /_________\\  ",
+        "\\/_/    \\_\\/\\/_________/      \\_\\/\\_\\/ \\/_________/\\/_/     \\/_/ \\/____________/  ",
+        "",
       }
       return opts
     end,
   },
 
   -- You can disable default plugins as follows:
-  { "max397574/better-escape.nvim", enabled = false },
+  { "max397574/better-escape.nvim", enabled = true },
 
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   {
